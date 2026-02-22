@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Rust build artifacts
+nk_core/target/
+
+# macOS
+.DS_Store
+
+# Raw log files (provenance is in logs/SIMULATION_PROVENANCE.md)
+*.log
+
+# Generated data (kept locally, not in version control)
+results/
+figures/
+
+*.code-workspace
