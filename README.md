@@ -9,7 +9,7 @@ This project is a **2026 AI-assisted rewrite** of the original C implementation 
 This codebase is grounded in the literature findings published in:
 - *Fiocco, Foffi, Sastry (2013)* PRE 88, 020301
 - *Fiocco, Foffi, Sastry (2014)* PRL 112, 025702
-- *PhD Thesis: Toy models of athermal deformation*
+- *PhD Thesis: Oscillatory deformation of amorphous materials: a numerical investigation - https://doi.org/10.5075/epfl-thesis-6101*
 
 The NK model provides a discrete, mathematically tractable energy landscape to study phenomena observed in amorphous solids (like Lennard-Jones glasses) under oscillatory shear. 
 
