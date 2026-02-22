@@ -2,7 +2,7 @@
 
 This repository contains a modern, high-performance Rust/Python implementation of the NK spin-glass model, designed to study the absorbing-diffusing phase transition under athermal quasistatic (AQS) cyclic deformation. 
 
-This project is a **2026 AI-assisted rewrite** of the original C implementation created during my PhD thesis. It packages the core physics into a fast Rust simulation engine (`nk_core`) exposed to Python via PyO3, orchestrating large-scale simulations, parallelization, and analysis through a Python pipeline.
+This project is a **2026 AI-assisted rewrite** of the original C implementation created during my [PhD thesis](https://github.com/davidefiocco/phd-thesis). It packages the core physics into a fast Rust simulation engine (`nk_core`) exposed to Python via PyO3, orchestrating large-scale simulations, parallelization, and analysis through a Python pipeline.
 
 ## Scientific Background & Findings
 
