@@ -139,4 +139,4 @@ python scripts/validate_physics.py
 ```
 
 Runs quick checks that absorbing and diffusing states are correctly observed
-and that a transition occurs near the expected gamma_c.
+and that a transition occurs near the expected $\gamma_c$.
