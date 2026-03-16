@@ -13,13 +13,8 @@ This codebase is grounded in the literature findings published in:
 
 The NK model provides a discrete, mathematically tractable energy landscape to study phenomena observed in amorphous solids (like Lennard-Jones glasses) under oscillatory shear. 
 
-### Major Findings Over Original Thesis
-In the original thesis work, studying the NK model under AQS deformation yielded crucial insights but was severely bottlenecked. The steepest-descent minimization on a discrete landscape required evaluating $O(N^2)$ adjacent states per step, making large system sizes ($N$) computationally prohibitive without massive parallelization.
-
-This 2026 rewrite overcomes these legacy limitations by combining Rust's performance (including optimized configuration-model graph generation and topological `HashSet` energy updates) with Python multiprocessing. As a result, we can now simulate  **$N=320$** spins and cleanly observe phenomena that were previously obscured by finite-size effects:
-
-1. **Absorbing-Diffusing Transition:** At a critical strain amplitude $\gamma_c$, the system undergoes a sharp transition. Below $\gamma_c$, the system falls into an *absorbing state* (a limit cycle), retaining memory of its initial effective temperature. Above $\gamma_c$, it enters a *diffusing state* (a chaotic-like exploration of the landscape), forgetting its initial conditions.
-2. **Finite-Size Scaling:** With the newly accessible large $N$ regimes, the transition sharpness is confirmed to increase with $N$. We can now empirically establish the finite-size scaling of the critical strain, mapped approximately as $\gamma_c \sim 3.2 N^{-0.45}$.
+### Motivation for the Rewrite
+The original thesis implementation in C was limited to small system sizes ($N$), making it difficult to disentangle finite-size effects from genuine critical behavior. This Rust/Python rewrite aims to push to larger $N$ and explore whether the absorbing-diffusing transition, finite-size scaling, and possible data collapse can be characterized more cleanly.
 
 ## Key Physics
 
